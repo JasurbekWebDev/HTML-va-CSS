@@ -7,6 +7,12 @@
 4. [Jadvallar](#14-jadvallar)
 5. [Formalar](#15-formalar)
 6. [Semantic HTML5 elementlar](#16-semantic-html5-elementlar)
+7. [Text Content va Typography](#17-text-content-va-typography)
+8. [Advanced Lists va Navigation](#18-advanced-lists-va-navigation)
+9. [Advanced Tables](#19-advanced-tables)
+10. [Professional Forms](#110-professional-forms)
+11. [Modern HTML5 Elements](#111-modern-html5-elements)
+12. [Advanced HTML5 API Elements](#112-advanced-html5-api-elements)
 ## 1-BO'LIM: HTML ASOSLARI
 ### 1.1 HTML nima?
 HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladigan markup tili. HTML elementlar yordamida matnni strukturalashtiradi.
@@ -80,6 +86,7 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
 - `<html>` - barcha HTML kodlarni o'rab oladi
 - `<head>` - sahifa haqida ma'lumotlar (ko'rinmaydigan)
 - `<body>` - sahifaning asosiy tarkibi (ko'rinadigan)
+----
 
 ### 1.3 Asosiy HTML taglar
 #### Sarlavhalar (Headings)

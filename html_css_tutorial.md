@@ -271,7 +271,7 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
     <p>&copy; 2024 Mening saytim. Barcha huquqlar himoyalangan.</p>
 </footer>
 ```
-## 1.2 Text Content va Typography
+## 1.7 Text Content va Typography
 
 ### Heading Hierarchy va Best Practices
 ```html
@@ -363,7 +363,7 @@ function hello() {
 </ruby>
 ```
 
-## 1.3 Advanced Lists va Navigation
+## 1.8 Advanced Lists va Navigation
 
 ### Complex List Structures
 ```html
@@ -425,7 +425,7 @@ function hello() {
 </ul>
 ```
 
-## 1.4 Advanced Tables
+## 1.9 Advanced Tables
 
 ### Complex Table Structure
 ```html
@@ -519,7 +519,7 @@ function hello() {
 </table>
 ```
 
-## 1.5 Professional Forms
+## 1.10 Professional Forms
 
 ### Complete Form Structure
 ```html
@@ -787,7 +787,7 @@ function hello() {
 </form>
 ```
 
-## 1.6 Modern HTML5 Elements
+## 1.11 Modern HTML5 Elements
 
 ### Semantic Structure
 ```html
@@ -1102,7 +1102,7 @@ function hello() {
 </html>
 ```
 
-## 1.7 Advanced HTML5 API Elements
+## 1.12 Advanced HTML5 API Elements
 
 ### Media Elements
 ```html

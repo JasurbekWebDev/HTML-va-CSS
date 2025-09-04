@@ -177,7 +177,8 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
 ```html
 <p> 
     (<p></p>) - tegi paragrafni belgilaydi . Brauzerlar avtomatik ravishda har bir
-    (<p></p>) elementdan oldin va keyin bitta bo'sh qator qo'shadi. Maslahat: Paragraflarni uslublash uchun CSS-dan foydalaning.
+    (<p></p>) elementdan oldin va keyin bitta bo'sh qator qo'shadi. 
+    Maslahat: Paragraflarni uslublash uchun CSS-dan foydalaning.
 </p>
 
 <span>

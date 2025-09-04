@@ -1,5 +1,5 @@
 # HTML va CSS to'liq darslik
-----
+
 ## Mundarija
 ## 1-BO'LIM: HTML ASOSLARI
 1. [HTML nima?](#11-html-nima)
@@ -14,6 +14,7 @@
 10. [Professional Forms](#110-professional-forms)
 11. [Modern HTML5 Elements](#111-modern-html5-elements)
 12. [Advanced HTML5 API Elements](#112-advanced-html5-api-elements)
+##
 ## 2-BO'LIM: CSS ASOSLARI
 1. [CSS nima?](#21-css-nima)
 2. [CSSni ulash usullari](#22-cssni-ulash-usullari)

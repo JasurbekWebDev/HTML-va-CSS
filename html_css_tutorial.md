@@ -44,54 +44,113 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Character Encoding (har doim birinchi bo'lishi kerak) -->
+    <!--<meta charset="UTF-8"> - HTML hujjatida ishlatiladigan belgilarni kodlash turini (UTF-8) belgilaydi. Bu brauzerga sahifadagi matn va maxsus belgilarni (masalan, o‘zbek harflari) to‘g‘ri ko‘rsatishni ta’minlaydi. -->
     <meta charset="UTF-8">
     
-    <!-- Viewport (responsive dizayn uchun) -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"> - veb-sahifaning mobil qurilmalarda to‘g‘ri ko‘rinishini ta’minlaydi. U sahifani qurilma ekranining kengligiga moslashtiradi (width=device-width), boshlang‘ich masshtabni 1.0 ga o‘rnatadi (initial-scale=1.0) va avtomatik kichraytirishni o‘chiradi (shrink-to-fit=no), bu esa sahifaning mobil do‘stona bo‘lishini ta’minlaydi. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     
     <!-- HTTP-Equiv Meta -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> — Bu teg brauzerga, ayniqsa Internet Explorer’ga, veb-sahifani eng so‘nggi rendering rejimida ko‘rsatishni buyuradi, moslik muammolarini oldini oladi. -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- <meta http-equiv="refresh" content="30"> — Bu teg sahifani har 30 soniyada avtomatik ravishda yangilaydi yoki qayta yuklaydi. -->
     <meta http-equiv="refresh" content="30">
     
     <!-- SEO Meta Tags -->
+    <!-- SEO meta teglari veb-sahifani qidiruv tizimlari uchun optimallashtirishga yordam beradi: -->
+    <!-- <title>Sahifa sarlavhasi - Brand nomi</title> — Sahifaning sarlavhasini belgilaydi, qidiruv natijalarida ko‘rinadi va foydalanuvchilarga sahifa mazmunini tushunishga yordam beradi. -->
     <title>Sahifa sarlavhasi - Brand nomi</title>
+
+    <!-- <meta name="description" content="Sahifa tavsifi 150-160 belgi ichida"> — Sahifaning qisqacha tavsifini beradi, qidiruv natijalarida sarlavha ostida ko‘rinadi, 150-160 belgi ichida bo‘lishi tavsiya etiladi. -->
     <meta name="description" content="Sahifa tavsifi 150-160 belgi ichida">
+
+    <!-- <meta name="keywords" content="kalit, so'zlar, vergul, bilan"> — Sahifa mazmuniga mos kalit so‘zlarni vergul bilan ajratib ko‘rsatadi, qidiruv tizimlariga sahifa mavzusini tushuntiradi. -->
     <meta name="keywords" content="kalit, so'zlar, vergul, bilan">
+
+    <!-- <meta name="author" content="Muallif ismi"> — Sahifa muallifini yoki yaratuvchisini ko‘rsatadi. -->
     <meta name="author" content="Muallif ismi">
+
+    <!-- <meta name="robots" content="index, follow"> — Qidiruv tizimi robotlariga sahifani indekslash (qidiruvga kiritish) va uning havolalarini kuzatishga ruxsat beradi. -->
     <meta name="robots" content="index, follow">
+
+    <!-- <meta name="googlebot" content="index, follow"> — Google qidiruv roboti uchun xuddi shu ko‘rsatmalarni beradi: sahifani indekslash va havolalarni kuzatish. -->
     <meta name="googlebot" content="index, follow">
     
     <!-- Open Graph (Facebook) -->
+    <!-- Open Graph (Facebook) meta teglari sahifani ijtimoiy tarmoqlarda, xususan Facebook’da, qanday ko‘rinishini boshqaradi: -->
+    <!-- <meta property="og:type" content="website"> — Sahifa turini belgilaydi (masalan, veb-sayt, maqola yoki video). -->
     <meta property="og:type" content="website">
+
+    <!-- <meta property="og:title" content="Sahifa sarlavhasi"> — Ijtimoiy tarmoqda ko‘rinadigan sahifa sarlavhasini o‘rnatadi. -->
     <meta property="og:title" content="Sahifa sarlavhasi">
+
+    <!-- <meta property="og:description" content="Sahifa tavsifi"> — Sahifaning qisqacha tavsifini ko‘rsatadi, foydalanuvchilarga mazmun haqida ma’lumot beradi. -->
     <meta property="og:description" content="Sahifa tavsifi">
+
+    <!-- <meta property="og:image" content="https://example.com/image.jpg"> — Ijtimoiy tarmoqda ulashilganda ko‘rinadigan rasm URL manzilini belgilaydi. -->
     <meta property="og:image" content="https://example.com/image.jpg">
+
+    <!-- <meta property="og:url" content="https://example.com/page"> — Sahifaning to‘liq URL manzilini ko‘rsatadi, ulashilganda shu manzilga yo‘naltiradi. -->
     <meta property="og:url" content="https://example.com/page">
+
+    <!-- <meta property="og:site_name" content="Sayt nomi"> — Saytning nomini belgilaydi, ulashilganda sayt brendi sifatida ko‘rinadi. -->
     <meta property="og:site_name" content="Sayt nomi">
     
     <!-- Twitter Card -->
+    <!-- Twitter Card meta teglari sahifaning Twitter (X) platformasida qanday ko‘rinishini boshqaradi: -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> — Twitter’da ulashilganda katta rasmli karta ko‘rinishini belgilaydi. -->
     <meta name="twitter:card" content="summary_large_image">
+
+    <!-- <meta name="twitter:title" content="Sahifa sarlavhasi"> — Twitter’da ko‘rinadigan sahifa sarlavhasini o‘rnatadi. -->
     <meta name="twitter:title" content="Sahifa sarlavhasi">
+
+    <!-- <meta name="twitter:description" content="Sahifa tavsifi"> — Sahifaning qisqacha tavsifini ko‘rsatadi, foydalanuvchilarga mazmun haqida ma’lumot beradi. -->
     <meta name="twitter:description" content="Sahifa tavsifi">
+
+    <!-- <meta name="twitter:image" content="https://example.com/image.jpg"> — Twitter’da ulashilganda ko‘rinadigan rasmning URL manzilini belgilaydi. -->
     <meta name="twitter:image" content="https://example.com/image.jpg">
     
     <!-- Icons -->
+    <!-- Iconlar - veb-saytning ikonkalarini (favicon) va mobil qurilmalar uchun maxsus belgilarini belgilaydi: -->
+    <!-- <link rel="icon" type="image/x-icon" href="/favicon.ico"> — Brauzer yorlig‘ida va xatcho‘plarda ko‘rinadigan saytning asosiy favicon faylini (.ico formatida) ulaydi. -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
+
+    <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> — 32x32 o‘lchamdagi PNG faviconni belgilaydi, yuqori sifatli ekranlar uchun. -->
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+
+    <!-- <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"> — 16x16 o‘lchamdagi PNG faviconni belgilaydi, odatda kichik o‘lchamlarda ishlatiladi. -->
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+    <!-- <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"> — Apple qurilmalarida (iPhone, iPad) bosh ekranda ko‘rinadigan 180x180 o‘lchamdagi ikonkani ulaydi. -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+    <!-- <link rel="manifest" href="/site.webmanifest"> — Veb-ilovaning manifest faylini ulaydi, bu saytni mobil qurilmalarda ilova sifatida o‘rnatish uchun sozlamalarni (masalan, ikonka, nom) belgilaydi. -->
     <link rel="manifest" href="/site.webmanifest">
     
     <!-- External Resources -->
+    <!-- External Resources - tashqi resurslarni veb-sahifaga ulash uchun ishlatiladi: -->
+    <!-- <link rel="stylesheet" href="styles.css"> — Sahifaga tashqi CSS faylini (styles.css) ulaydi, bu saytning dizaynini boshqaradi. -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> — Google Fonts serveri bilan oldindan ulanishni boshlaydi, shriftlarni tezroq yuklash uchun. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> — Google Fonts’dan statik fayllarni (masalan, shriftlar) tez yuklash uchun ulanishni o‘rnatadi, crossorigin domenlararo so‘rovlar uchun. -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> — Google Fonts’dan Roboto shriftini (300, 400, 700 og‘irliklarda) sahifaga ulaydi, matnlarning ko‘rinishini sozlash uchun. -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     
     <!-- Performance hints -->
+    <!-- Performance hints - veb-sahifa yuklanishini optimallashtirish uchun ishlatiladi: -->
+    <!-- <link rel="preload" href="hero-image.jpg" as="image"> — Brauzerga muhim resursni (masalan, hero-image.jpg rasmni) sahifa yuklanishi boshlanishida darhol yuklashni buyuradi, bu yuklanish tezligini oshiradi. -->
     <link rel="preload" href="hero-image.jpg" as="image">
+
+    <!-- <link rel="prefetch" href="next-page.html"> — Brauzerga foydalanuvchi keyin o‘tishi mumkin bo‘lgan sahifani (next-page.html) oldindan yuklab qo‘yishni bildiradi, bu navigatsiyani tezlashtiradi. -->
     <link rel="prefetch" href="next-page.html">
+
+    <!-- <link rel="dns-prefetch" href="//example.com"> — Brauzerga tashqi domenning (example.com) DNS so‘rovini oldindan hal qilishni buyuradi, bu tashqi resurslarni tezroq yuklashga yordam beradi. -->
     <link rel="dns-prefetch" href="//example.com">
 </head>
 <body>

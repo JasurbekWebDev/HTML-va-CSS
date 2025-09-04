@@ -1,6 +1,8 @@
 # HTML va CSS to'liq darslik
 
 ## 1-BO'LIM: HTML ASOSLARI
+### 1.2 HTML hujjat strukturasi
+### 1.3 Asosiy HTML taglar
 
 ### 1.1 HTML nima?
 HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladigan markup tili. HTML elementlar yordamida matnni strukturalashtiradi.
@@ -8,14 +10,63 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
 ### 1.2 HTML hujjat strukturasi
 ```html
 <!DOCTYPE html>
-<html lang="uz">
+<html lang="uz-UZ" dir="ltr">
 <head>
+    <!-- Character Encoding (har doim birinchi bo'lishi kerak) -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahifa nomi</title>
+    
+    <!-- Viewport (responsive dizayn uchun) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    
+    <!-- HTTP-Equiv Meta -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="refresh" content="30">
+    
+    <!-- SEO Meta Tags -->
+    <title>Sahifa sarlavhasi - Brand nomi</title>
+    <meta name="description" content="Sahifa tavsifi 150-160 belgi ichida">
+    <meta name="keywords" content="kalit, so'zlar, vergul, bilan">
+    <meta name="author" content="Muallif ismi">
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    
+    <!-- Open Graph (Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sahifa sarlavhasi">
+    <meta property="og:description" content="Sahifa tavsifi">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/page">
+    <meta property="og:site_name" content="Sayt nomi">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Sahifa sarlavhasi">
+    <meta name="twitter:description" content="Sahifa tavsifi">
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+    
+    <!-- Icons -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/site.webmanifest">
+    
+    <!-- External Resources -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <!-- Performance hints -->
+    <link rel="preload" href="hero-image.jpg" as="image">
+    <link rel="prefetch" href="next-page.html">
+    <link rel="dns-prefetch" href="//example.com">
 </head>
 <body>
     <!-- Sahifa tarkibi -->
+    
+    <!-- Scripts (sahifa oxirida) -->
+    <script src="script.js" defer></script>
 </body>
 </html>
 ```
@@ -27,7 +78,6 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
 - `<body>` - sahifaning asosiy tarkibi (ko'rinadigan)
 
 ### 1.3 Asosiy HTML taglar
-
 #### Sarlavhalar (Headings)
 ```html
 <h1>Eng katta sarlavha</h1>
@@ -855,69 +905,7 @@ document.querySelector('.nav-toggle').addEventListener('click', function() {
 
 Bu darslik HTML va CSS ning asosiy va ilg'or mavzularini qamrab oladi. Har bir mavzu amaliy misollar bilan tushuntirilgan va real loyihalarda qo'llash mumkin.
 
-### Mukammal HTML struktura
-```html
-<!DOCTYPE html>
-<html lang="uz-UZ" dir="ltr">
-<head>
-    <!-- Character Encoding (har doim birinchi bo'lishi kerak) -->
-    <meta charset="UTF-8">
-    
-    <!-- Viewport (responsive dizayn uchun) -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    
-    <!-- HTTP-Equiv Meta -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="refresh" content="30">
-    
-    <!-- SEO Meta Tags -->
-    <title>Sahifa sarlavhasi - Brand nomi</title>
-    <meta name="description" content="Sahifa tavsifi 150-160 belgi ichida">
-    <meta name="keywords" content="kalit, so'zlar, vergul, bilan">
-    <meta name="author" content="Muallif ismi">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    
-    <!-- Open Graph (Facebook) -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Sahifa sarlavhasi">
-    <meta property="og:description" content="Sahifa tavsifi">
-    <meta property="og:image" content="https://example.com/image.jpg">
-    <meta property="og:url" content="https://example.com/page">
-    <meta property="og:site_name" content="Sayt nomi">
-    
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sahifa sarlavhasi">
-    <meta name="twitter:description" content="Sahifa tavsifi">
-    <meta name="twitter:image" content="https://example.com/image.jpg">
-    
-    <!-- Icons -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
-    
-    <!-- External Resources -->
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    
-    <!-- Performance hints -->
-    <link rel="preload" href="hero-image.jpg" as="image">
-    <link rel="prefetch" href="next-page.html">
-    <link rel="dns-prefetch" href="//example.com">
-</head>
-<body>
-    <!-- Sahifa tarkibi -->
-    
-    <!-- Scripts (sahifa oxirida) -->
-    <script src="script.js" defer></script>
-</body>
-</html>
-```
+
 
 ## 1.2 Text Content va Typography
 

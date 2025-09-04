@@ -186,7 +186,14 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
     matnning bir qismini yoki hujjatning bir qismini belgilash uchun ishlatiladigan ichki konteynerdir.
     CSS tomonidan osongina uslublanadi yoki class yoki id atributidan foydalangan holda JavaScript bilan boshqariladi.
 </span>
-<div>Bu block element - alohida qator egallaydi.</div>
+
+<div>
+    Bu block element - alohida qator egallaydi.
+    (<div>) - HTML hujjatidagi bo'lim yoki bo'limni belgilaydi.
+    (<div>) - HTML elementlari uchun konteyner sifatida ishlatiladi - keyinchalik u CSS bilan uslublanadi yoki JavaScript bilan boshqariladi.
+    (<div>) - sinf yoki id atributidan foydalanib osongina uslublanadi.
+    (<div>) ! Teg ichiga har qanday turdagi kontent qo'yilishi mumkin
+</div>
 
 <!-- Matn formatlashtirish -->
 <strong>Qalin matn</strong>

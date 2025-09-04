@@ -158,6 +158,7 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
     <img src="logo.png" alt="Kompaniya logotipi">
 </a>
 ```
+----
 
 ### 1.4 Jadvallar
 ```html
@@ -188,6 +189,7 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
     </tfoot>
 </table>
 ```
+----
 
 ### 1.5 Formalar
 ```html
@@ -236,6 +238,7 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
     <button type="reset">Tozalash</button>
 </form>
 ```
+----
 
 ### 1.6 Semantic HTML5 elementlar
 ```html
@@ -278,6 +281,8 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
     <p>&copy; 2024 Mening saytim. Barcha huquqlar himoyalangan.</p>
 </footer>
 ```
+----
+
 ## 1.7 Text Content va Typography
 
 ### Heading Hierarchy va Best Practices
@@ -369,6 +374,7 @@ function hello() {
     字 <rt>ji</rt>
 </ruby>
 ```
+----
 
 ## 1.8 Advanced Lists va Navigation
 
@@ -431,6 +437,7 @@ function hello() {
     <li><input type="checkbox" disabled> Boshqa vazifa</li>
 </ul>
 ```
+----
 
 ## 1.9 Advanced Tables
 
@@ -525,6 +532,7 @@ function hello() {
     <!-- tbody content -->
 </table>
 ```
+----
 
 ## 1.10 Professional Forms
 
@@ -793,6 +801,7 @@ function hello() {
     </div>
 </form>
 ```
+----
 
 ## 1.11 Modern HTML5 Elements
 
@@ -1108,6 +1117,7 @@ function hello() {
 </body>
 </html>
 ```
+----
 
 ## 1.12 Advanced HTML5 API Elements
 
@@ -1307,7 +1317,7 @@ function hello() {
     <img src="diagram.png" alt="Kompaniya diagrammasi">
 </object>
 ```
-
+----
 
 ## 2-BO'LIM: CSS ASOSLARI
 

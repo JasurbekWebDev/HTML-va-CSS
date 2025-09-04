@@ -1,6 +1,7 @@
 # HTML va CSS to'liq darslik
-
+----
 ## Mundarija
+## 1-BO'LIM: HTML ASOSLARI
 1. [HTML nima?](#11-html-nima)
 2. [HTML hujjat strukturasi](#12-html-hujjat-strukturasi)
 3. [Asosiy HTML taglar](#13-asosiy-html-taglar)
@@ -13,7 +14,25 @@
 10. [Professional Forms](#110-professional-forms)
 11. [Modern HTML5 Elements](#111-modern-html5-elements)
 12. [Advanced HTML5 API Elements](#112-advanced-html5-api-elements)
-## 1-BO'LIM: HTML ASOSLARI
+## 2-BO'LIM: CSS ASOSLARI
+1. [CSS nima?](#21-css-nima)
+2. [CSSni ulash usullari](#22-cssni-ulash-usullari)
+3. [CSS selektorlar](#23-css-selektorlar)
+4. [CSS xususiyatlari](#24-css-xususiyatlari)
+5. [Flexbox](#25-flexbox)
+6. [CSS Grid](#26-css-grid)
+7. [Responsive dizayn](#27-responsive-dizayn)
+8. [CSS animatsiyalar](#28-css-animatsiyalar)
+9. [CSS o'zgaruvchilar (Custom Properties)](#29-css-ozgaruvchilar-custom-properties)
+## 3-BO'LIM: AMALIY MISOLLAR
+1. [Oddiy veb-sahifa shablon](#31-oddiy-veb-sahifa-shablon)
+2. [Responsive navigatsiya menyusi](#32-responsive-navigatsiya-menyusi)
+3. []()
+4. []()
+5. []()
+6. []()
+7. []()
+8. []()
 ### 1.1 HTML nima?
 HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladigan markup tili. HTML elementlar yordamida matnni strukturalashtiradi.
 

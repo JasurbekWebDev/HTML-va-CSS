@@ -34,9 +34,15 @@
 HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladigan markup tili. HTML elementlar yordamida matnni strukturalashtiradi.
 
 ### 1.2 HTML hujjat strukturasi
+**Tushuntirish:**
+- `<!DOCTYPE html>` - Bu brauzerga hujjatning HTML5 formatida ekanligini bildiradi. U hujjat turini aniqlaydi va to‘g‘ri ko‘rsatilishini ta'minlaydi.
+- `<html></html>` - Bu HTML hujjatining asosiy konteyneri bo‘lib, veb-sahifaning barcha tarkibini o‘z ichiga oladi. U hujjatning boshlanishi va tugashini belgilaydi va <head> va <body> teglarini o‘z ichiga oladi.
+- `<head></head>` - Bu HTML hujjatining bosh qismini belgilaydi va veb-sahifa haqidagi metama'lumotlarni o‘z ichiga oladi. U odatda sahifa sarlavhasi (<title>), CSS fayllari, JavaScript bog‘lanishlari va boshqa meta teglarni (masalan, charset yoki SEO uchun) joylashtiradi. Bu qism brauzerda ko‘rinmaydi, lekin sahifaning to‘g‘ri ishlashi uchun muhimdir.
+- `<body></body>` - Bu HTML hujjatining asosiy tarkibiy qismini belgilaydi, unda veb-sahifada brauzerda ko‘rinadigan barcha elementlar, masalan, matn, rasm, havola, jadvallar va boshqalar joylashadi.
+----
 ```html
 <!DOCTYPE html>
-<html lang="uz-UZ" dir="ltr">
+<html lang="en">
 <head>
     <!-- Character Encoding (har doim birinchi bo'lishi kerak) -->
     <meta charset="UTF-8">
@@ -96,14 +102,7 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
 </body>
 </html>
 ```
-
-**Tushuntirish:**
-- `<!DOCTYPE html>` - HTML5 hujjat ekanligini bildiradi
-- `<html>` - barcha HTML kodlarni o'rab oladi
-- `<head>` - sahifa haqida ma'lumotlar (ko'rinmaydigan)
-- `<body>` - sahifaning asosiy tarkibi (ko'rinadigan)
 ----
-
 ### 1.3 Asosiy HTML taglar
 #### Sarlavhalar (Headings)
 ```html

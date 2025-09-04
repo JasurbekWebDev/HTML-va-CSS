@@ -1,9 +1,13 @@
 # HTML va CSS to'liq darslik
 
+## Mundarija
+1. [HTML nima?](#11-html-nima)
+2. [HTML hujjat strukturasi](#12-html-hujjat-strukturasi)
+3. [Asosiy HTML taglar](#13-asosiy-html-taglar)
+4. [Jadvallar](#14-jadvallar)
+5. [Formalar](#15-formalar)
+6. [Semantic HTML5 elementlar](#16-semantic-html5-elementlar)
 ## 1-BO'LIM: HTML ASOSLARI
-### 1.2 HTML hujjat strukturasi
-### 1.3 Asosiy HTML taglar
-
 ### 1.1 HTML nima?
 HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladigan markup tili. HTML elementlar yordamida matnni strukturalashtiradi.
 

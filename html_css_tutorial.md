@@ -162,7 +162,7 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
 </html>
 ```
 ----
-### 1.3 Asosiy HTML taglar
+### 1.3 Asosiy HTML teglar
 #### Sarlavhalar (Headings)
 ```html
 <h1>Eng katta sarlavha</h1>
@@ -175,8 +175,12 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
 
 #### Matnlar
 ```html
-<p>Bu paragraf. Matnning asosiy qismi shu yerda yoziladi.</p>
-<span>Bu inline element - qatorning ichida ishlatiladi.</span>
+<p> (<p></p>) - tegi paragrafni belgilaydi . Brauzerlar avtomatik ravishda har bir (<p></p>) elementdan oldin va keyin bitta bo'sh qator qo'shadi. Maslahat: Paragraflarni uslublash uchun CSS-dan foydalaning.</p>
+<span>
+    Bu inline element - qatorning ichida ishlatiladi.
+    matnning bir qismini yoki hujjatning bir qismini belgilash uchun ishlatiladigan ichki konteynerdir.
+    CSS tomonidan osongina uslublanadi yoki class yoki id atributidan foydalangan holda JavaScript bilan boshqariladi.
+</span>
 <div>Bu block element - alohida qator egallaydi.</div>
 
 <!-- Matn formatlashtirish -->

@@ -1,16 +1,4 @@
-# HTML va CSS PROFESSIONAL MUKAMMAL DARSLIK
-
-## KIRISH: Web Development Fundamentals
-
-### Web qanday ishlaydi?
-1. **Client-Server Model**: Brauzer (client) server dan ma'lumot so'raydi
-2. **HTTP/HTTPS Protocol**: Ma'lumot uzatish protokoli
-3. **DNS**: Domain nomlarni IP manzillarga aylantirish
-4. **Rendering Process**: Brauzerde sahifa qanday ko'rsatilishi
-
----
-
-# 📚 1-BO'LIM: HTML ASOSLARI
+# HTML va CSS to'liq darslik
 
 ## 1-BO'LIM: HTML ASOSLARI
 
@@ -229,6 +217,643 @@ HTML (HyperText Markup Language) - veb sahifalarini yaratish uchun ishlatiladiga
     <p>&copy; 2024 Mening saytim. Barcha huquqlar himoyalangan.</p>
 </footer>
 ```
+
+## 2-BO'LIM: CSS ASOSLARI
+
+### 2.1 CSS nima?
+CSS (Cascading Style Sheets) - HTML elementlarning ko'rinishini belgilaydigan til. Ranglar, o'lchamlar, joylashuv va boshqa vizual xususiyatlarni boshqaradi.
+
+### 2.2 CSSni ulash usullari
+
+#### 1. Inline CSS
+```html
+<p style="color: red; font-size: 18px;">Qizil matn</p>
+```
+
+#### 2. Internal CSS
+```html
+<head>
+    <style>
+        p {
+            color: blue;
+            font-size: 16px;
+        }
+    </style>
+</head>
+```
+
+#### 3. External CSS
+```html
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+```
+
+### 2.3 CSS selektorlar
+
+#### Asosiy selektorlar
+```css
+/* Element selektori */
+h1 {
+    color: red;
+}
+
+/* ID selektori */
+#header {
+    background-color: blue;
+}
+
+/* Class selektori */
+.highlight {
+    background-color: yellow;
+}
+
+/* Universal selektor */
+* {
+    margin: 0;
+    padding: 0;
+}
+```
+
+#### Murakkab selektorlar
+```css
+/* Descendant selector */
+div p {
+    color: green;
+}
+
+/* Child selector */
+div > p {
+    font-weight: bold;
+}
+
+/* Adjacent sibling */
+h1 + p {
+    margin-top: 0;
+}
+
+/* General sibling */
+h1 ~ p {
+    color: gray;
+}
+
+/* Attribute selector */
+input[type="text"] {
+    border: 1px solid #ccc;
+}
+
+/* Pseudo-class */
+a:hover {
+    color: red;
+}
+
+/* Pseudo-element */
+p::first-line {
+    font-weight: bold;
+}
+```
+
+### 2.4 CSS xususiyatlari
+
+#### Matn stillashtirish
+```css
+.text-style {
+    /* Font */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    
+    /* Matn rangi va hizalanishi */
+    color: #333;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    
+    /* Qator balandligi va harf oraligi */
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+}
+```
+
+#### Box Model
+```css
+.box {
+    /* O'lchami */
+    width: 300px;
+    height: 200px;
+    
+    /* Padding (ichki bo'shliq) */
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    
+    /* Border */
+    border: 2px solid #000;
+    border-radius: 10px;
+    
+    /* Margin (tashqi bo'shliq) */
+    margin: 20px;
+    margin: 10px 20px; /* vertikal horizontal */
+    margin: 10px 15px 10px 15px; /* top right bottom left */
+    
+    /* Fon */
+    background-color: #f0f0f0;
+    background-image: url('pattern.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+```
+
+#### Pozitsiya va display
+```css
+/* Display turlari */
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.none {
+    display: none;
+}
+
+/* Position turlari */
+.static {
+    position: static; /* standart */
+}
+
+.relative {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute {
+    position: absolute;
+    top: 50px;
+    right: 30px;
+}
+
+.fixed {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+}
+```
+
+### 2.5 Flexbox
+```css
+.flex-container {
+    display: flex;
+    
+    /* Yo'nalish */
+    flex-direction: row; /* row, column, row-reverse, column-reverse */
+    
+    /* Asosiy o'q bo'yicha hizalash */
+    justify-content: center; /* flex-start, flex-end, center, space-between, space-around */
+    
+    /* Kesish o'qi bo'yicha hizalash */
+    align-items: center; /* flex-start, flex-end, center, baseline, stretch */
+    
+    /* O'rash */
+    flex-wrap: wrap; /* nowrap, wrap, wrap-reverse */
+    
+    /* Bo'shliq */
+    gap: 20px;
+}
+
+.flex-item {
+    /* Flex xususiyatlari */
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 200px;
+    
+    /* Yoki qisqacha */
+    flex: 1 0 200px; /* grow shrink basis */
+    
+    /* Alohida hizalash */
+    align-self: flex-end;
+}
+```
+
+### 2.6 CSS Grid
+```css
+.grid-container {
+    display: grid;
+    
+    /* Grid shablonlari */
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    
+    /* Yoki repeat bilan */
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    
+    /* Bo'shliqlar */
+    gap: 20px;
+    grid-column-gap: 15px;
+    grid-row-gap: 10px;
+    
+    /* Hizalash */
+    justify-content: center;
+    align-content: center;
+    justify-items: stretch;
+    align-items: center;
+}
+
+.grid-item {
+    /* Grid joylashuvi */
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    
+    /* Yoki qisqacha */
+    grid-area: 2 / 1 / 4 / 3; /* row-start / col-start / row-end / col-end */
+    
+    /* Alohida hizalash */
+    justify-self: end;
+    align-self: start;
+}
+
+/* Grid template areas */
+.grid-layout {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";
+    grid-template-columns: 200px 1fr 1fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header { grid-area: header; }
+.sidebar { grid-area: sidebar; }
+.main { grid-area: main; }
+.footer { grid-area: footer; }
+```
+
+### 2.7 Responsive dizayn
+```css
+/* Mobile First yondashuv */
+.container {
+    width: 100%;
+    padding: 10px;
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 750px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        padding: 30px;
+    }
+}
+
+/* Flexible images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive typography */
+html {
+    font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+/* Responsive Grid */
+.responsive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+```
+
+### 2.8 CSS animatsiyalar
+
+#### Transitions
+```css
+.button {
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    background-color: red;
+    transform: scale(1.1);
+}
+
+/* Alohida xususiyatlar uchun */
+.element {
+    transition-property: background-color, transform;
+    transition-duration: 0.3s, 0.5s;
+    transition-timing-function: ease, ease-in-out;
+    transition-delay: 0s, 0.1s;
+}
+```
+
+#### Keyframe animatsiyalar
+```css
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out;
+}
+
+.animate-bounce {
+    animation: bounce 2s infinite;
+}
+
+/* Animation xususiyatlari */
+.animation-example {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: both;
+}
+```
+
+### 2.9 CSS o'zgaruvchilar (Custom Properties)
+```css
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --font-size-base: 16px;
+    --border-radius: 4px;
+    --spacing: 20px;
+}
+
+.card {
+    background-color: var(--primary-color);
+    font-size: var(--font-size-base);
+    border-radius: var(--border-radius);
+    padding: var(--spacing);
+    margin-bottom: calc(var(--spacing) * 2);
+}
+
+/* Media query ichida o'zgaruvchilarni o'zgartirish */
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 14px;
+        --spacing: 15px;
+    }
+}
+```
+
+## 3-BO'LIM: AMALIY MISOLLAR
+
+### 3.1 Oddiy veb-sahifa shablon
+```html
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mening saytim</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 1rem 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        main {
+            padding: 2rem 0;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .feature {
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .feature:hover {
+            transform: translateY(-5px);
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home">Bosh sahifa</a></li>
+                    <li><a href="#about">Biz haqimizda</a></li>
+                    <li><a href="#services">Xizmatlar</a></li>
+                    <li><a href="#contact">Aloqa</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section class="hero">
+                <h1>Xush kelibsiz!</h1>
+                <p>Bu bizning ajoyib veb-saytimiz</p>
+            </section>
+            
+            <section class="features">
+                <div class="feature">
+                    <h3>Tezlik</h3>
+                    <p>Saytimiz juda tez yuklanadi</p>
+                </div>
+                <div class="feature">
+                    <h3>Responsive</h3>
+                    <p>Barcha qurilmalarda yaxshi ko'rinadi</p>
+                </div>
+                <div class="feature">
+                    <h3>Zamonaviy</h3>
+                    <p>Eng so'nggi texnologiyalar ishlatilgan</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Mening saytim. Barcha huquqlar himoyalangan.</p>
+        </div>
+    </footer>
+</body>
+</html>
+```
+
+### 3.2 Responsive navigatsiya menyusi
+```html
+<style>
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+    
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #2c3e50;
+        padding: 1rem;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+}
+</style>
+
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+    document.querySelector('nav ul').classList.toggle('active');
+});
+</script>
+```
+
+## 4-BO'LIM: ENG YAXSHI AMALIYOTLAR
+
+### 4.1 HTML eng yaxshi amaliyotlar
+- Semantic taglardan foydalaning
+- Alt atributini rasmlarga qo'shing
+- Form elementlariga label qo'ying
+- W3C validatordan foydalaning
+- Accessibility ni hisobga oling
+
+### 4.2 CSS eng yaxshi amaliyotlar
+- Mobile-first yondashuvini qo'llang
+- CSS o'zgaruvchilardan foydalaning
+- Flexbox va Grid dan foydalaning
+- Optimized rasmlardan foydalaning
+- CSS fayllari hajmini kamaytiring
+
+### 4.3 Performance optimizatsiya
+- Rasmlarni siqing
+- CSS va JS fayllarini minify qiling
+- CDN dan foydalaning
+- Lazy loading qo'llang
+- Browser cache dan foydalaning
+
+Bu darslik HTML va CSS ning asosiy va ilg'or mavzularini qamrab oladi. Har bir mavzu amaliy misollar bilan tushuntirilgan va real loyihalarda qo'llash mumkin.
 
 ### Mukammal HTML struktura
 ```html

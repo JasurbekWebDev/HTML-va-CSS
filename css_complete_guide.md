@@ -159,15 +159,6 @@ div {
     background: lightblue url("image.jpg") no-repeat center/cover;
 }
 ```
-CSS `background-repeat` xususiyati fon tasvirining element ichida qanday takrorlanishini nazorat qiladi. Tasvirning gorizontal, vertikal, ikkalasi yoki umuman takrorlanmasligini aniqlaydi.
-- `repeat` - (standart): Fon tasviri gorizontal va vertikal ravishda takrorlanadi. Agar oxirgi rasm mos kelmasa, u qirqib olinadi.
-- `repeat-x` - Fon tasviri faqat gorizontal ravishda takrorlanadi.
-- `repeat-y` - Fon tasviri faqat vertikal ravishda takrorlanadi. 
-- `no-repeat` - Fon tasviri faqat bir marta ko'rsatiladi va takrorlanmaydi. 
-- `space` - Fon tasviri iloji boricha qirqishsiz takrorlanadi. Birinchi va oxirgi tasvirlar qirralarga mahkamlanadi va qolgan bo'sh joy rasmlar o'rtasida teng taqsimlanadi. 
-- `round` - Fon tasviri takrorlanadi va mavjud boʻsh joyni toʻldirish uchun tasvirlar choʻziladi yoki siqiladi, bunda boʻshliqlar yoki qirqishlar boʻlmaydi.
-- `initial` - Xususiyatni standart qiymatiga o'rnatadi ( `repeat` ).
-- `inherit` - Qiymatni asosiy elementdan meros qilib oladi .`background-repeat`
 
 ## 8. CSS Chegaralar (CSS Borders)
 

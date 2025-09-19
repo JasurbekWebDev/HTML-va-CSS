@@ -822,6 +822,45 @@ nav li a:hover {
 ```
 
 ## 34. CSS Rasm Galereyasi (CSS Image Gallery)
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS</title>
+  <link rel="stylesheet" href="css.css">
+</head>
+<body>
+  <div class="gallery">
+    <div class="gallery-item">
+      <img src="./image.png" alt="Image 1">
+      <div class="overlay">
+        <p>Image one Description</p>
+      </div>
+    </div>
+     <div class="gallery-item">
+      <img src="./image.png" alt="Image 1">
+      <div class="overlay">
+        <p>Image two Description</p>
+      </div>
+    </div>
+     <div class="gallery-item">
+      <img src="./image.png" alt="Image 1">
+      <div class="overlay">
+        <p>Image three Description</p>
+      </div>
+    </div>
+     <div class="gallery-item">
+      <img src="./image.png" alt="Image 1">
+      <div class="overlay">
+        <p>Image four Description</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+```
 
 ```css
 .gallery {
